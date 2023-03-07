@@ -10,5 +10,6 @@ namespace Learns.Model.Classes
         public LearnsContext(DbContextOptions<LearnsContext> options) : base(options) { }
 
         public DbSet<Institute> Institutes { get; set; }
+        public DbSet<Subject> Subjects { get; set; }
     }
 }
