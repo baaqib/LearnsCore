@@ -8,5 +8,6 @@ namespace Learns.Model.Classes
     {
         public long ID { get; set; }
         public string Name { get; set; }
+        public string Topic { get; set; }
     }
 }
