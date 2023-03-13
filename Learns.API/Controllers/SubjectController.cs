@@ -10,8 +10,9 @@ using Microsoft.AspNetCore.Mvc;
 namespace Learns.API.Controllers
 {
     
-    [ApiController]
     [Route("Api/[controller]")]
+    [ApiController]
+
     public class SubjectController : ControllerBase
     {
         private readonly ISubjectRepository _subjectRepository;
@@ -46,7 +47,7 @@ namespace Learns.API.Controllers
             return Ok("Added Successfully");
         }
 
-        [HttpPost]
+        [HttpPut]
         [Route("UpdateSubject")]
         public async Task<IActionResult> UpdateSubject(Subject subject)
         {
@@ -55,7 +56,7 @@ namespace Learns.API.Controllers
         }
 
         [HttpDelete]
-        [Route("DeleteSubject")]
+        [Route("DeleteSubject/{Id}")]
         public JsonResult DeleteSubject(long Id)
         {
             _subjectRepository.DeleteSubject(Id);

@@ -30,6 +30,9 @@ namespace Learns.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<IInstituteRepository, InstituteRepository>();
+            services.AddScoped<ISubjectRepository, SubjectRepository>();
+            services.AddScoped<ITopicRepository, TopicRepository>();
+
 
             services.AddControllers();
             services.AddDbContext<LearnsContext>(options => options.UseSqlServer(Configuration.GetConnectionString("connstring")));
