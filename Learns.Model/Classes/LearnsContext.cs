@@ -11,5 +11,6 @@ namespace Learns.Model.Classes
 
         public DbSet<Institute> Institutes { get; set; }
         public DbSet<Subject> Subjects { get; set; }
+        public DbSet<Topic> Topics { get; set; }
     }
 }

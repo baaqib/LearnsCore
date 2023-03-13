@@ -4,10 +4,10 @@ using System.Text;
 
 namespace Learns.Model.Classes
 {
-    public class Subject
+    public class Topic
     {
         public long ID { get; set; }
-        public string SubjectName { get; set; }
-        public string InstituteId { get; set; }
+        public string TopicName { get; set; }
+        public string SubjectId { get; set; }
     }
 }
