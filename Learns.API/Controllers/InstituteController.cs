@@ -50,7 +50,7 @@ namespace Learns.API.Controllers
             return Ok("Updated Successfully");
         }
         [HttpDelete]
-        [Route("DeleteInstitute")]
+        [Route("DeleteInstitute/{Id}")]
         //[HttpDelete("{id}")]
         public JsonResult Delete(long id)
         {
