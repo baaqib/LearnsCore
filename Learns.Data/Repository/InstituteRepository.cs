@@ -22,7 +22,7 @@ namespace Learns.Data.Repository
             return await _appDBContext.Institutes.ToListAsync();
         }
 
-        public async Task<Institute> GetInstituteByID(int ID)
+        public async Task<Institute> GetInstituteByID(long ID)
         {
             return await _appDBContext.Institutes.FindAsync(ID);
         }

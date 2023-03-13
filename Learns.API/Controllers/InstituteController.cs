@@ -27,7 +27,7 @@ namespace Learns.API.Controllers
         }
 
         [Route("GetInstituteByID/{Id}")]
-        public async Task<IActionResult> GetEmpByID(int Id)
+        public async Task<IActionResult> GetEmpByID(long Id)
         {
             return Ok(await _instituteRepository.GetInstituteByID(Id));
         }
