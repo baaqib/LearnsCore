@@ -8,6 +8,7 @@ namespace Learns.Model.Classes
     {
         public long ID { get; set; }
         public string TopicName { get; set; }
+        public bool IsActive { get; set; }
         public string SubjectId { get; set; }
     }
 }
