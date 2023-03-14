@@ -13,5 +13,6 @@ namespace Learns.Model.Classes
         public bool IsActive { get; set; }
         public Institute Institute { get; set; }
          
+        public ICollection<Topic> Topics { get; set; }
     }
 }
