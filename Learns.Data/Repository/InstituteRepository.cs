@@ -3,6 +3,7 @@ using Learns.Model.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -29,6 +30,12 @@ namespace Learns.Data.Repository
         public async Task<Institute> InsertInstitute(Institute objInstitute)
         {
             _appDBContext.Institutes.Add(objInstitute);
+
+            //_appDBContext.Subjects.Where(y =>y.SubjectName == "sajid").Select(x => new { 
+            //    sname = x.SubjectName,
+            //    kk = x.Institute.Name
+            //});
+
             await _appDBContext.SaveChangesAsync();
             return objInstitute;
         }
